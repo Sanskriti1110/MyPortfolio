@@ -1,0 +1,8 @@
+node_modules/
+dist-pages/
+.env*
+*.tsbuildinfo
+
+.npm-cache/
+public/concepts/
+public/models/
