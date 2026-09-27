@@ -25,7 +25,7 @@ export default function CareerGrowth(){
   return()=>clearTimeout(timer);
  },[step,phase,paused,reduced]);
 
- const select=(index:number)=>{setPaused(true);setSelected(index);setPhase('focus')};
+ const select=(index:number)=>{setPaused(true);setStep(index);setSelected(index);setPhase('focus')};
  return <section className="career-growth" aria-label="Career milestones">
   <header className="growth-heading"><div><h1>My experience.<br/><span>Roles and projects.</span></h1></div><button className="growth-play" onClick={()=>setPaused(p=>!p)} disabled={reduced} aria-label={paused?'Play career animation':'Pause career animation'}>{paused?<Play size={15}/>:<Pause size={15}/>}<span>{reduced?'SELECT A MILESTONE':paused?'PLAY TIMELINE':'PAUSE TIMELINE'}</span></button></header>
   <div className="growth-chart" data-paused={paused||reduced}>

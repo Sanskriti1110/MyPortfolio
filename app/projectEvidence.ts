@@ -126,14 +126,7 @@ export const projectEvidence: Record<string, ProjectEvidence> = {
         "label": "Transmitter and receiver PCB work"
       }
     ],
-    "figures": [
-      {
-        "file": "filterfox-static.webp",
-        "title": "Archived assembly render",
-        "description": "Rendered from the supplied STEP export. This archived assembly illustrates component placement; it is not presented as a verified final-revision board.",
-        "kind": "CAD"
-      }
-    ]
+    "figures": []
   },
   "refresh": {
     "metrics": [
