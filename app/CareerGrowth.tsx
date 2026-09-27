@@ -21,13 +21,13 @@ export default function CareerGrowth(){
    if(phase==='grow')setPhase('focus');
    else if(phase==='focus')setPhase('rest');
    else{setStep(s=>(s+1)%milestones.length);setPhase('grow')}
-  },phase==='grow'?1600:phase==='focus'?3400:1100);
+  },phase==='grow'?1200:phase==='focus'?2600:700);
   return()=>clearTimeout(timer);
  },[step,phase,paused,reduced]);
 
  const select=(index:number)=>{setPaused(true);setSelected(index);setPhase('focus')};
  return <section className="career-growth" aria-label="Career milestones">
-  <header className="growth-heading"><div><h1>Built on experience.<br/><span>Always growing.</span></h1></div><button className="growth-play" onClick={()=>setPaused(p=>!p)} disabled={reduced} aria-label={paused?'Play career animation':'Pause career animation'}>{paused?<Play size={15}/>:<Pause size={15}/>}<span>{reduced?'SELECT A MILESTONE':paused?'PLAY JOURNEY':'PAUSE JOURNEY'}</span></button></header>
+  <header className="growth-heading"><div><h1>My experience.<br/><span>Roles and projects.</span></h1></div><button className="growth-play" onClick={()=>setPaused(p=>!p)} disabled={reduced} aria-label={paused?'Play career animation':'Pause career animation'}>{paused?<Play size={15}/>:<Pause size={15}/>}<span>{reduced?'SELECT A MILESTONE':paused?'PLAY TIMELINE':'PAUSE TIMELINE'}</span></button></header>
   <div className="growth-chart" data-paused={paused||reduced}>
    <div className={'growth-camera '+(phase==='focus'&&!reduced?'is-focused':'')}>
     <svg className="growth-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
