@@ -12,6 +12,7 @@ export default function ContactMessage(){
  <form action={'https://formsubmit.co/'+profile.email} method="POST" target="_blank">
  <input type="hidden" name="_subject" value="New message from Sanskriti’s portfolio"/>
  <input type="hidden" name="_template" value="table"/>
+ <input type="hidden" name="_next" value="https://sanskriti1110.github.io/MyPortfolio/"/>
  <input type="hidden" name="_url" value="https://sanskriti1110.github.io/MyPortfolio/"/>
  <div className="message-honey" aria-hidden="true"><label>Leave this empty<input name="_honey" tabIndex={-1} autoComplete="off"/></label></div>
  <label htmlFor="message-name">Your name<input id="message-name" name="name" autoComplete="name" required maxLength={100}/></label>
@@ -20,6 +21,7 @@ export default function ContactMessage(){
  <button type="submit" className="message-send">Send message <ArrowUpRight size={18}/></button>
  </form></DialogContent></Dialog>;
 }
+
 
 
 
