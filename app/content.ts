@@ -296,25 +296,25 @@ export const experience = [
     "date": "JUN 2026 — PRESENT",
     "company": "Rainmaker Technologies",
     "title": "Electrical Engineer Intern",
-    "text": "I work on airborne sensor PCBs, environmental-chamber calibration, and a motor test bench that uses a relay matrix and four-wire resistance measurements."
+    "text": "I design and test electronics for airborne sensing, including the Jonah V4 sensor board and its power controller. My work includes environmental-chamber calibration, achieving a sensor response below one second, and building a test bench for brushless-motor resistance measurements and spin testing."
   },
   {
     "date": "JAN — MAY 2026",
     "company": "University of Pennsylvania",
     "title": "Teaching Assistant · IoT Edge Computing",
-    "text": "I helped student teams bring up their boards, debug firmware and wireless connections, and test their IoT projects."
+    "text": "I supported student teams developing embedded IoT systems, helping them test new boards, troubleshoot firmware, and debug wireless communication. I guided them through hardware and software integration and testing their complete systems."
   },
   {
     "date": "MAY — DEC 2025",
     "company": "FilterFox Inc.",
     "title": "Hardware Engineering Intern",
-    "text": "I worked on ESP32 hardware, RF and power circuits, PCB layout, and coordination with manufacturers."
+    "text": "I worked on ESP32-based hardware for an HVAC filter-monitoring device using LoRa and Wi-Fi. My responsibilities included transmitter and receiver PCB design, antenna matching, power management, and coordinating prototype manufacturing and testing."
   },
   {
     "date": "JAN — AUG 2025",
     "company": "GRASP Robotics Lab · UPenn",
     "title": "Researcher",
-    "text": "I worked on a four-layer breakout board for an EPC901 image sensor and nRF54L15 firmware for timed analog sampling and data buffering."
+    "text": "I worked on a four-layer breakout board for an EPC901 image sensor and developed firmware for the nRF54L15 microcontroller. The firmware coordinated timed analog sampling and data buffering for sensor readout."
   }
 ];
 

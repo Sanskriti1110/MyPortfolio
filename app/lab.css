@@ -91,7 +91,7 @@ html:has(.instrument-room),body:has(.instrument-room){height:100%;overflow:hidde
 .instrument-room button,.instrument-room input{letter-spacing:inherit;word-spacing:inherit}
 .screen-view :is(h1,h2,h3),.instrument-case :is(h1,h2,h3,h4,h5){letter-spacing:.025em;line-height:1.12;font-weight:400}
 .eye-name h1{letter-spacing:.035em;line-height:1.04}
-.eye-name>p:first-child{letter-spacing:.14em;word-spacing:.16em;line-height:1.6;margin-bottom:16px}
+.eye-name>p:first-child{letter-spacing:.14em;word-spacing:normal;line-height:1.6;margin-bottom:16px}
 .eye-description{letter-spacing:.055em;word-spacing:.12em;line-height:1.65;margin:20px 0!important;font-size:clamp(16px,1.6vw,20px)}
 .screen-action,.memory-thumbnail>span{letter-spacing:.1em!important;word-spacing:.12em;font-size:12px!important;line-height:1.5}
 .channel-keys button{letter-spacing:.035em;font-weight:400;line-height:1.2}
@@ -372,3 +372,22 @@ html:has(.instrument-room),body:has(.instrument-room){height:100%;overflow:hidde
  .contact-links h2{font-size:24px}
 }
 @media(max-width:760px){.signal-skill .skill-detail{font-size:14px}.contact-heading h1 span{display:block}}
+.contact-links>.message-card{position:relative;display:flex;flex-direction:column;justify-content:center;gap:10px;min-width:0;text-align:left;padding:24px 54px 24px 24px;border:1px solid #66517e;background:#10151fe8;border-radius:8px;color:#e5ebf3;transition:background .25s,border-color .25s,transform .25s;cursor:pointer}
+.message-card>svg{position:absolute;right:24px;top:50%;width:25px;height:25px;color:var(--channel);transform:translateY(-50%)}
+.message-card:hover{background:#2c203fe8;border-color:var(--channel);transform:translateY(-3px)}
+.message-dialog[data-slot=dialog-content]{width:calc(100% - 32px);max-width:540px!important;max-height:calc(100dvh - 32px);overflow-y:auto;background:#0e1620;color:#e1eaf1;border:1px solid #66517e;border-radius:12px;padding:28px;gap:14px;font-family:var(--font-body)}
+.message-heading{display:flex;justify-content:space-between;align-items:center;gap:16px}.message-heading h2{font-size:30px;line-height:1.15;letter-spacing:.015em;word-spacing:normal;font-weight:400}.message-heading button{display:grid;place-items:center;min-width:40px;min-height:40px;color:#c08aff}
+.message-dialog [data-slot=dialog-description]{color:#aebbce;font-size:16px;line-height:1.5}
+.message-dialog form{display:grid;gap:16px}.message-dialog label{display:grid;gap:6px;font-size:16px}.message-dialog input,.message-dialog textarea{width:100%;border:1px solid #546173;background:#080e16;color:#e1eaf1;border-radius:5px;padding:10px 12px;font:16px/1.5 var(--font-body)}.message-dialog textarea{resize:vertical;min-height:100px}
+.message-dialog :is(input,textarea,button):focus-visible{outline:2px solid #c08aff;outline-offset:3px}.message-honey{display:none}.message-service{font-size:13px;color:#aebbce;line-height:1.5}.message-send{display:flex;justify-content:center;align-items:center;gap:12px;padding:12px;background:#c08aff;color:#10151f;border-radius:5px;font:17px var(--font-body);cursor:pointer;transition:background-color .18s ease,color .18s ease}
+@media(min-width:761px) and (max-height:800px){.contact-links>.message-card{padding:12px 44px 12px 18px;gap:5px}}
+@media(max-width:760px){.contact-links>.message-card{padding:12px 12px 30px;gap:6px}.message-card>svg{top:auto;bottom:9px;right:14px;transform:none;width:16px;height:16px}.message-dialog[data-slot=dialog-content]{padding:20px}}
+@media(max-width:380px){.contact-links>.message-card{padding:18px 40px 18px 14px;gap:8px}}
+
+.message-dialog{--font-body:'Vielotta',sans-serif;--accent:#c08aff}
+
+.message-dialog[data-slot=dialog-content]{z-index:91}
+
+.message-dialog .message-send:hover,.message-dialog .message-send:focus-visible{background:#d0a5ff;color:#10151f}.message-dialog .message-send:active{background:#b779f2;color:#10151f}
+
+
