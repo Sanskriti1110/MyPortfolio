@@ -33,9 +33,9 @@ export const projectEvidence: Record<string, ProjectEvidence> = {
         "kind": "PCB"
       },
       {
-        "file": "validation.webp",
+        "file": "validation-labeled.svg",
         "title": "Sensor response comparison",
-        "description": "Temperature and humidity readings from Jonah, the previous logger, and an iMet reference during the same test. Five boards were calibrated in an environmental chamber.",
+        "description": "Temperature and humidity readings from the new Jonah, the previous Jonah, and an iMet reference during the same test. The new Jonah’s ambient-temperature and humidity traces follow the iMet reference more closely during changes, while the previous Jonah shows greater lag and offset. Multiple boards were calibrated in an environmental chamber.",
         "kind": "Test results"
       }
     ]

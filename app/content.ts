@@ -27,31 +27,31 @@ export const projects = [
       },
       {
         "title": "My work",
-        "text": "I moved the temperature sensor onto a low-mass flexible PCB section and used an HMC07M capacitive humidity sensor with a PCAP04 readout circuit."
+        "text": "I moved the temperature sensor onto a low-mass flexible PCB section and used an HMC07M bare capacitive humidity sensor with a PCAP04 CDC (capacitance-to-digital converter) circuit."
       },
       {
         "title": "Hardware",
-        "text": "The four-layer rigid-flex board combines temperature, pressure, and humidity sensing. I also designed the controller’s 48 V-to-12 V buck converter for a 4 A output. The controller achieves 35 mV peak-to-peak output ripple and 92% efficiency, and handles acquisition and fan control."
+        "text": "The four-layer rigid-flex board combines temperature, pressure, and humidity sensing. I also designed the controller’s 48 V-to-12 V buck converter for a 4 A output. The controller achieves 35 mV peak-to-peak output ripple and 92% efficiency, and handles acquisition, the acoustic wind sensor, and fan controls."
       },
       {
         "title": "Testing",
-        "text": "I calibrated five boards in an environmental chamber and compared readings with the previous logger and an iMet reference. My résumé reports a response time below one second to reach 63% of a change (τ63)."
+        "text": "I calibrated multiple boards in an environmental chamber and compared readings with the previous Jonah and an iMet reference. The new Jonah achieved a response time below one second to reach 63% of a change (τ63)."
       }
     ],
     "result": "<1 s",
     "resultLabel": "Reported sensor response time (τ63)",
     "lesson": "The sensor layout and the amount of material around it affect how quickly it responds.",
-    "evidence": "validation.webp",
-    "evidenceAlt": "Temperature and humidity readings from Jonah, the previous logger, and an iMet reference",
+    "evidence": "validation-labeled.svg",
+    "evidenceAlt": "Temperature and humidity readings from Jonah, the previous Jonah, and an iMet reference",
     "evidenceCaption": "Temperature and humidity comparison",
-    "note": "Controller figures: 48 V input, 12 V output at a 4 A design load, 35 mV peak-to-peak ripple, and 92% efficiency."
+    "note": ""
   },
   {
     "id": "motor-bench",
     "name": "Brushless Motor Test Bench",
     "category": "MOTOR TESTING / RAINMAKER TECHNOLOGIES",
     "headline": "Winding-resistance and spin testing on one rig.",
-    "summary": "I designed and built a Raspberry Pi test bench that measures motor winding resistance and runs brushless drone motors through an ESC. I also wrote the Python control software and setup guide.",
+    "summary": "I designed and built a Raspberry Pi test bench that measures motor winding resistance and runs brushless drone motors through an ESC.",
     "tags": [
       "Raspberry Pi",
       "Python",
@@ -100,7 +100,8 @@ export const projects = [
       "FreeRTOS",
       "MQTT / Node-RED"
     ],
-    "image": "foldeasy-system-cutout.webp",
+    "image": "foldeasy-system.webp",
+    "thumbnail": "foldeasy-system-cutout.webp",
     "alt": "FoldEasy assembled folding platform and electronics",
     "caption": "FOLDEASY / PHYSICAL PROTOTYPE",
     "role": "PCB architecture, embedded firmware & IoT integration",
@@ -111,7 +112,7 @@ export const projects = [
       },
       {
         "title": "Hardware",
-        "text": "I worked on a custom four-layer board using a SAMW25 microcontroller. It connects servo motors, light and infrared sensors, and an atomizer, with USB-C input and a lithium-ion power system."
+        "text": "I worked on a custom four-layer board using a SAMW25 microcontroller. It connects servo motors, light and infrared sensors, and an atomizer, with USB-C input and a lithium-ion power system. A power multiplexer switches between the USB and battery supplies."
       },
       {
         "title": "Firmware",
@@ -151,15 +152,11 @@ export const projects = [
     "sections": [
       {
         "title": "Goal",
-        "text": "Integrate sensors, wireless communication, and power control on an ESP32-based PCB."
+        "text": "Develop ESP32-based hardware for an IoT HVAC filter-monitoring device that communicates over LoRa and Wi-Fi."
       },
       {
         "title": "My work",
-        "text": "I worked on Altium schematics and layouts for transmitter and receiver boards, including LoRa and Wi-Fi routing and antenna matching."
-      },
-      {
-        "title": "Power management",
-        "text": "I worked on an event-driven wake-up approach so the device could spend less time active. My résumé reports a 65–70% battery-life improvement; measurement logs are not included here."
+        "text": "I worked on Altium schematics and layouts for transmitter and receiver boards, including LoRa and Wi-Fi routing and antenna matching. I also worked on an event-driven wake-up approach so the device could spend less time active."
       },
       {
         "title": "Manufacturing",
@@ -198,11 +195,7 @@ export const projects = [
       },
       {
         "title": "Wireless connection",
-        "text": "The implementation includes ATmega firmware, an ESP32 connection to Blynk, and Python processing. The earlier LoRa proposal was not part of this implementation."
-      },
-      {
-        "title": "Prototype status",
-        "text": "We built the glove and integrated the firmware and electronics. Quantitative cooling-performance results are not available in the project report."
+        "text": "The implementation includes ATmega firmware, an ESP32 connection to Blynk, and Python processing."
       }
     ],
     "result": "ADC → PWM",

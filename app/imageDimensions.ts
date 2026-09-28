@@ -204,6 +204,7 @@ export const imageDimensions: Record<string, {width:number;height:number}> = {
     "width": 1600,
     "height": 1200
   },
+  "validation-labeled.svg": { "width": 1600, "height": 1086 },
   "validation.webp": {
     "width": 1600,
     "height": 1086
